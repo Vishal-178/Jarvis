@@ -76,7 +76,7 @@ const Sell = () => {
 
       {isSubmitted ? (
         <div className="bg-green-500 text-white text-center font-semibold py-4 px-6 rounded-lg">
-          You'll receive a Whatsapp shortly for the next steps
+          {`You&apos;ll receive a Whatsapp shortly for the next steps`}
         </div>
       ) : (
         <>
