@@ -44,7 +44,7 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error("Error updating sheet:", error);
     return NextResponse.json(
-      { success: false, error: "Failed to update sheet" },
+      { success: false, error: JSON.stringify(error) },
       { status: 500 }
     );
   }
